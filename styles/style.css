@@ -149,4 +149,16 @@ nav{
     color: #787885;
  }
 
+
+ /* Start Future Style  */
+
+ .future-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    border: 1px solid red;
+    padding: 10px;
+ }
+
  
