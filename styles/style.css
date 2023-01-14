@@ -10,7 +10,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-color: lightgray;
+    background-color: white;
 }
 
 .container{
@@ -111,7 +111,7 @@ nav{
 
  .popular-container {
 
-  
+   background-color: lightgray;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    row-gap: 20px;
@@ -233,13 +233,32 @@ nav{
  /* Media Query  */
 
  @media only screen and (max-width:576px){
-    footer{
+
+
+    .menu ul{
+        position: fixed;
+        top: 80px;
         background-color: red;
+        height: 100vh;
         width: 100%;
+        padding-top: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul li{
+        margin: 30px 0;
+        font-size: 22px;
+    }
+    footer{
+       
+       width: 100%;
+       margin: 0 auto;
     }
 
     .future-container{
         flex-direction: column-reverse;
+        width: 100%;
         
        
         padding: 5px;
@@ -247,10 +266,12 @@ nav{
 
     .popular-container{
         grid-template-columns: repeat(1, 1fr);
-        color: 5px;
+       padding: 5px;
+       width: 100%;
     }
     .banner{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
     
  }
